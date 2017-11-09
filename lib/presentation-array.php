@@ -12,7 +12,7 @@ class PresentationArray {
 	function prepare($field, $level = -1) {
 		$out = $this->cleanup($field);
 		$out = $this->level($out, $level);
-		$out = $this->default($out, $field);		
+		$out = $this->defaults($out, $field);		
 		$out = $this->fieldsets($out, $field);
 		$out = $this->styleTable($out);
 		$out = $this->loop($out);
@@ -49,7 +49,7 @@ class PresentationArray {
 		return $out;
 	}
 
-	function default($out, $field) {
+	function defaults($out, $field) {
 		if(isset($field['fields'])) {
 			$out['fieldsets']['default']['fields'] = $field['fields'];
 		} else {
