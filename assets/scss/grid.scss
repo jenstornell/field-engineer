@@ -4,10 +4,20 @@
 }
 
 .egr-fieldset {
+	position: relative;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	label.fieldset-name {
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: 0.4em;
+		text-transform: uppercase;
+		background: #d3d3d3;
+		font-size: .7em;
+	}
 }
 
 @media screen and (min-width: 60em) {
