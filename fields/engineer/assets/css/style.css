@@ -65,7 +65,8 @@
   right: 0;
   z-index: 10000;
   display: none;
-  margin-top: .4em; }
+  margin-top: .4em;
+  margin-bottom: 100px; }
   .egr-dropdown:before {
     content: '';
     border-left: .4em solid transparent;
