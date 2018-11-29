@@ -24,6 +24,7 @@
 			<?php
 				foreach($presentation['sets'] as $set_id => $set ) :
 					?><div class="egr-fieldset" data-fieldset-name="<?php echo $set['name']; ?>">
+						<label class="fieldset-name"><?= $set['name'] ?></label>
 						<div class="egr-fields"><?php
 							echo $instance->presentation()->render(array(
 								'instance' => $instance,
